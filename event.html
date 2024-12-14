@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        img{
+            border-radius: 20px;
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 style="text-align: center;"><u>Event Registration Form</u></h1>
+    <form action="">
+    <fieldset>
+        <legend>About This Event</legend>
+        <table>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td rowspan="11"><img src="gokart4.jpeg" alt="" title="Aitam's Go Karting Championship Season-2" width="800" height="500"></td>
+ 
+            </tr>
+            <tr>
+                <th>Event Name</th>
+                <th>:</th>
+               <td>Aitam's Go Karting Championship Season-2</td>
+            </tr>
+            <tr>
+                <th>Convenor</th>
+                <th>:</th>
+                <td>Dr.A.S.Srinivasa Rao <strong>Principal,Aitam</strong></td>
+            </tr>
+            <tr>
+                <th>Co-Convenors</th>
+                <th>:</th>
+                
+                <td>Dr.D.Sreeramulu <strong>R&D Professor,ME</strong></td>
+                </tr>
+                <tr>
+                    <th>
+                    </th>
+                    <td></td>
+                    <td>Dr.V.Ashok Kumar <strong>HOD and Professsor,ECE</strong></td>
+                </tr>
+                <tr>
+                    <th>
+
+                    </th>
+                    <td></td>
+                    <td>Dr.Y.Ramesh <strong>HOD and Professor,CSE</strong></td>
+                </tr>
+                <tr>
+                    <th>Program Co-ordinator</th>
+                    <th>:</th>
+                    <td>Mr.Raghuveer Dontikurti <strong>Asst Prof,Mech</strong></td>
+                </tr>
+            <tr>
+                <th>Venue</th>
+                <th>:</th>
+                <td>Aditya Institute of Technology And Management</td>
+            </tr>
+            <tr>
+                <th>Dates</th>
+                <th>:</th>
+                
+                <td>04/03/2025 to 07/03/2025</td>
+            </tr>
+            <tr>
+                <th>Registration Fees</th>
+                <th>:</th>
+                <td>20000/-</td>
+            </tr>
+            <tr>
+                <th>Prize Money</th>
+                <th>:</th>
+                <td>UPTO 4 lakhs</td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Participant Information</legend>
+        <label for="">Full Name:</label>
+        <input type="text" placeholder="Enter your full name">
+        <br><br>
+        <label for="">Date of Birth:</label>
+        <input type="date">
+        <br><br>
+        <label for="">Gender:</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+      
+       <br><br> <label for="">Phone Number:</label>
+        <input type="number" placeholder="Enter your Phone Number"><br><br>
+        <label for="">Email-id</label>
+        <input type="email" placeholder="email example(aaa@gmail.com)"><br><br>
+        <label for="">College/university name:</label>
+        <input type="text" placeholder="Enter your college/university name"><br><br>
+        <label for="">College Address:</label>
+        <input type="text" placeholder="Enter your college address"><br><br>
+        <label for="">Where did you virtual about this event:</label>
+        <select name="" id="">
+            <optgroup label="Social Media">
+              <option value="">Instagram</option>
+              <option value="">Facebook</option>
+              <option value="">Twitter</option>
+              <option value="">Telegram</option>
+            </optgroup>
+            <optgroup label="Others">
+                <option value="">Friends</option>
+                <option value="">Faculty</option>
+                <option value="">Family Members</option>
+            </optgroup>
+        </select><br><br>
+        <label for="">Probality of winning:</label>
+        <input
+          type="range"
+          id=""
+          name=""
+          min="1"
+          max="100"
+          oninput="output.value = this.value"
+        />
+        <output name="output" for="">75</output>
+        <br /><br />
+
+    </fieldset>
+    <fieldset>
+        <legend>Payment Inforamtion</legend>
+        <label for="">Number of Tickets:</label>
+        <input type="number" list="aaa" placeholder="mininum:1 & Maximum:4">
+        <datalist id="aaa">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </datalist>
+        <br><br>
+        <label for="">Payment Method</label>
+        <select name="" id="">
+            <optgroup label="Cards">
+                <option value="">Credit Card</option>
+            <option value="">Debit Card</option>
+            </optgroup>
+            <optgroup label="UPI">
+                <option value="">Phone Pay</option>
+                <option value="">Google Pay</option>
+                <option value="">Paytm</option>
+
+            </optgroup>
+            
+        </select><br><br>
+        <label for="">TRANSACTION(UTR) NUMBER:</label>
+     <input type="number" placeholder="UTR Should Contain 12 numbers">
+     <br><br>
+     <label for="">TRANSACTION RECIEPT:</label>
+     <input type="file">
+    </fieldset>
+    <br>
+    <label for="">How you excited about this event:</label><br>
+    <textarea name="" id="" placeholder="write minimum 10 words" rows="10" cols="150"></textarea>
+    <br><br>
+    <input type="submit" value="EVENT TRY CHEY BRO">
+    <input type="reset">
+</form>
+</body>
+</html>
